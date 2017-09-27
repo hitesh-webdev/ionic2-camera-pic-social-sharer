@@ -1,0 +1,8 @@
+{
+  "name": "camera-pic-sharer",
+  "app_id": "bead4934",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

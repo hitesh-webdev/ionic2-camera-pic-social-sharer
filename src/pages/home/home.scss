@@ -1,0 +1,19 @@
+page-home {
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.preview {
+    flex: 5;
+}
+.buttons {
+    flex: 1;
+}
+.buttonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}

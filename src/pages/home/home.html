@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Camera Pic Sharer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="container">
+
+    <ion-row class="preview">
+      <ion-col col-12>
+        <img [src]="cameraImage" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="buttons">
+      <ion-col col-12 class="buttonFlex">
+        <button ion-button large (click)="takepicture()"><ion-icon name="camera" style="margin-right: 10px;"></ion-icon> Click</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab top right *ngIf="cameraImage">
+    <button ion-fab (click)="socialSharer()"><ion-icon name="share"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>
